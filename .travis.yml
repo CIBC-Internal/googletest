@@ -79,3 +79,5 @@ addons:
 
 notifications:
   email: false
+  slack: sciinstitute:lZnpQQXNd4Io5iGDPQDpJmI1
+
