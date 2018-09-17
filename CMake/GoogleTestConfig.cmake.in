@@ -1,0 +1,9 @@
+#-----------------------------------------------------------------------------
+#
+# GoogleTestConfig.cmake - GoogleTest CMake configuration file for external projects.
+
+
+SET(SCI_GTEST_INCLUDE "@SCI_GTEST_INCLUDE@")
+SET(SCI_GTEST_LIBRARY "@SCI_GTEST_LIBRARY@")
+set(SCI_GTEST_LIBRARY_DIR "@SCI_GTEST_LIBRARY_DIR@")
+set(GTEST_USE_FILE "@GTEST_USE_FILE@")

@@ -21,3 +21,17 @@ if(BUILD_GMOCK)
 else()
   add_subdirectory( googletest )
 endif()
+
+#############
+# CIBC part #
+#############
+
+SET(SCI_GTEST_INCLUDE "${CMAKE_SOURCE_DIR}/src")
+#SET(SCI_GTEST_LIBRARY qwt CACHE INTERNAL "Qwt library" FORCE)
+
+#set(SCI_QWT_LIBRARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/src)
+set(GTEST_USE_FILE "${CMAKE_CURRENT_SOURCE_DIR}/UseGoogleTest.cmake")
+
+CONFIGURE_FILE("${CMAKE_SOURCE_DIR}/CMake/GoogleTestConfig.cmake.in"
+  "${CMAKE_BINARY_DIR}/GoogleTestConfig.cmake" @ONLY IMMEDIATE)
+#EXPORT(TARGETS ${SCI_GTEST_LIBRARY} FILE QwtExports.cmake)
