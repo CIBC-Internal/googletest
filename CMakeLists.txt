@@ -26,7 +26,10 @@ endif()
 # CIBC part #
 #############
 
-SET(SCI_GTEST_INCLUDE "${CMAKE_SOURCE_DIR}/src")
+SET(SCI_GTEST_INCLUDE
+  ${CMAKE_SOURCE_DIR}/googletest/include
+  ${CMAKE_SOURCE_DIR}/googlemock/include
+  )
 #SET(SCI_GTEST_LIBRARY qwt CACHE INTERNAL "Qwt library" FORCE)
 
 #set(SCI_QWT_LIBRARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/src)
